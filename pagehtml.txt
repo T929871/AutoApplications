@@ -1,0 +1,49 @@
+
+<body bgcolor="#FFFFFF">
+
+<p><u><b><font face="Arial">Software Library Search</font></b></u></p>
+<form action="/swlibrary/dbsearch.asp" method="get">
+<input name="search" value="hang" />
+<input type="submit" />
+<font face="Arial">&nbsp;&nbsp; [<font size="2">Enter the </font></font>
+<span style="font-family: Arial"><font size="2">first <b>
+<span style="color:red">4 letters of the Name of Application or Vendor </span>
+</b>that you wish to search for</font></span><font face="Arial"><font size="2"> and 
+then click on Submit Query Button</font>]</font></form>
+<p><font face="Arial" size="2">[Search Tip: User generic searches and don't use 
+spaces in your search.&nbsp; For example search <b>project</b>, or <b>projectpro,</b> 
+but not <b>project pro</b>]</font></p>
+<p>&nbsp;</p>
+
+<!--<p><a href="file://\\corp.ads\software\release\apps\ADOB-AcrobatSTD-7">aaa</a></p>
+<a href="file://corp.ads/software/Release/Apps/%20/%20ADOB-Acrobat7STD">My Photos</a> <p>&nbsp;</p> -->
+
+<table border="1" width="989">
+	<tr>
+	<th width="194" align="left"><font face="Arial">S/W Title</font></th>
+	<th width="270" align="left"><font face="Arial">Path</font></th>
+	<th width="44" align="left"><font face="Arial">ID</font></th>
+	<th width="126" align="left"><font face="Arial">Licensed?</font></th>
+	<th width="85" align="left"><font face="Arial">Std Offering</font></th>
+	<th width="173" align="left"><font face="Arial">Win7 Compatibility</font></th>
+	<th width="193" align="left"><font face="Arial">Win10 Compatibility</font></th>	</tr>
+	
+	</table>
+
+
+	
+<p>&nbsp;</p>
+<p><b><font face="Arial">Legacy Links:</font></b></p>
+<table border="1" width="90%">
+	<tr>
+		<td width="28%"><font face="Arial">&nbsp;<a href="file://\\wireless.corp.ads\dist\apps\3rdpartyApps">Former wireless 3rd party applications:</a></font></td>
+		<td width="32%"><font face="Arial">&nbsp;<a href="file://\\wireless.corp.ads\dist\apps\InHouseApps">Former wireless in-house applications:</a></font></td>
+		<td width="29%"><font face="Arial">&nbsp;<a href="file://\\wireless.corp.ads\dist\apps\MicrosoftApps">Former wireless Microsoft applications:</a></font></td>
+	</tr>
+</table>
+<p class="MsoNormal"><i><span style="color:#1F497D">“Please email the
+<a style="color: blue; text-decoration: underline; text-underline: single" href="mailto:desktop.projectTeam@telus.com?subject=App%20Required%20from%20Wireless%20Dist:%20">
+Desktop Project Team</a> when any application is installed from a Legacy 
+location.&nbsp; Include the name and path of the application.”</span></i></p>
+&nbsp;<p><font face="Arial">If there are any problems with this page, report them to: <a href="mailto:technology.evolution@telus.com">Technology.Evolution@TELUS.com
+</font></p>
