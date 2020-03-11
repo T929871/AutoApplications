@@ -177,10 +177,9 @@ def readPage(software, sw4, matchindex):
         # ---bluezone
         if "BlueZone " in software:
             software = software.replace('BlueZone ', 'BlueZone Desktop')
-        # --NICE-ScreenAgent-6.4R1-West
-        if "ScreenAgent" in software:
-            software = software.replace('ScreenAgent', 'ScreenAgent WEST')
 
+        # remove -
+        software = software.replace('-', '')
         # replace spaces with -
         software = software.replace(' ', '-')
         # remove brackets
@@ -202,7 +201,14 @@ def readPage(software, sw4, matchindex):
         for line in page_lines:
             cmper = re.sub('\W+', '', line)
             score.append(fuzz.ratio(path, cmper))
-            # print(line)
+            #print(line)
+
+        # have to do this or same score will return only first index
+        visited = []
+        for i in range(len(score)):
+            iter(i, score, visited)
+        #print(score)
+
 
         if matchindex is 0:
             index = score.index(max(score))
@@ -211,7 +217,11 @@ def readPage(software, sw4, matchindex):
             scoreset = sorted(score, reverse=True)
             index = score.index(scoreset[matchindex])
 
-        #print(score)
+
+
+
+
+
         html = page_lines[index]
         #print(html)
 
@@ -390,6 +400,16 @@ def readPage(software, sw4, matchindex):
 
         return
 
+
+def iter(i, score, visited):
+    if score[i] in visited:
+        score[i] = score[i] - 1
+        iter(i, score, visited)
+    else:
+        visited.append(score[i])
+
+
+
 def installApps(apps):
     os.system('color 0A')
 
@@ -478,6 +498,8 @@ def main(*old):
 
     event, values = window.Read()
     window.Close()
+
+    os.remove("pagehtml.txt")
 
     sys.exit()
 
